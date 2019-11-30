@@ -111,8 +111,8 @@ main = do
 ```
 
 Division :
-```
 Toujours pareil, la division :
+```
 main = do
    let var1 = 12
    let var2 = 3
@@ -127,7 +127,6 @@ Par exemple, si on veut afficher les valeurs de 1 à 10, on peut utiliser un sé
 De la même manière, on peut afficher toutes le lettres de l’alphabet en utilisant [a..z].
 Le code qui suit affiche les chiffres de 1 à 10 :
 ```
-Toujours pareil, la division :
 main = do
    print [1..10]
 ```
@@ -330,7 +329,7 @@ noto  :: Bool -> String
 
 eveno x = if x `rem` 2 == 0
    then True
-else False
+	 else False
 noto x = if x == True
    then "This is an even Number"
 else "This is an ODD number"
@@ -346,9 +345,9 @@ Finalement, j’aimerais conclure cette partie en discutant des input et output 
 Il est possible de demander à l’utilisateur de rentrer des données dans le terminal, de la manière suivante :
 ```
 main = do
-putStrLn "Comment vous appelez vous ?"
-name <- getLine
-putStrLn $ "Bonjour " ++ name
+	putStrLn "Comment vous appelez vous ?"
+	name <- getLine
+	putStrLn $ "Bonjour " ++ name
 ```
 
 L’utilisateur se verra demander d’entrer son nom. Si il tape Bob, l’output sera le suivant :
